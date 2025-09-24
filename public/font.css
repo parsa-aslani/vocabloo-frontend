@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "tanha";
+  src: url("./fonts/Tanha-FD.woff"), url("./fonts/Tanha-FD.woff2"),
+    url("./fonts/Tanha-FD.eot");
+  font-style: normal;
+  font-weight: 600 !important;
+}
+
+@font-face {
+  font-family: "vazir";
+  src: url("./fonts/Vazir-Bold.woff"), url("./fonts/Vazir-Bold.woff2"),
+    url("./fonts/Vazir-Bold.eot");
+  font-style: normal;
+  font-weight: 900 !important;
+}
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  font-family: "tanha" !important;
+}
+
+.Toastify__toast {
+  font-family: "Vazir", sans-serif !important; /* فونت دلخواهت */
+  font-size: 16px;
+  color: rgb(222, 223, 230);
+  background-color: rgb(36, 38, 41);
+}

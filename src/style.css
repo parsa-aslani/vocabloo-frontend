@@ -1,0 +1,695 @@
+/* color root*/
+:root {
+  --color-purple: #a572ec;
+  --color-pink: #ff79c6;
+  --color-Background: #2a2d38;
+  --color-CurrentLine: #6272a4;
+  --color-Selection: #494c5e;
+  --color-Foreground: #f8f8f2;
+  --color-gray: #d1cdd8;
+  --color-red: #ff4040;
+}
+button {
+  transition: all 0.3s ease-in-out !important;
+}
+/* navbar */
+.vocabloo-icon {
+  width: 110px;
+}
+.profile {
+  font-family: "vazir" !important;
+  background-color: var(--color-Background) !important;
+  color: var(--color-Foreground) !important;
+  border-radius: 0.5rem !important;
+  padding: 10px 7px !important;
+}
+.your-score {
+  color: var(--color-purple);
+}
+.site-navbar {
+  background-color: var(--color-Selection) !important;
+}
+.navbar-text {
+  color: var(--color-Foreground) !important;
+  font-size: 1.1rem !important;
+  font-weight: bold !important;
+}
+.logout-btn {
+  background-color: var(--color-purple) !important;
+  color: var(--color-gray) !important;
+  font-family: "vazir" !important;
+  padding: 5px 10px !important;
+  border: 2px solid var(--color-purple) !important;
+}
+.logout-btn:hover {
+  background-color: transparent !important;
+  color: var(--color-purple) !important;
+}
+@media screen and (min-width: 768px) {
+  .profile {
+    padding: 13px 15px !important;
+  }
+  .logout-btn {
+    padding: 8px 25px !important;
+  }
+  .vocabloo-icon {
+    width: 135px;
+  }
+}
+/*  home-page */
+.home-page-background {
+  width: 100vw;
+  height: 100%;
+  background: linear-gradient(#6a7283, #373946);
+  position: relative;
+}
+/* leader-board */
+.leader-board {
+  width: 320px;
+  height: 275px;
+  background-color: var(--color-Selection) !important;
+  border-radius: 1rem !important;
+  border: 2px solid var(--color-Background) !important;
+}
+.leader-board-item {
+  color: var(--color-Foreground) !important;
+  font-family: "vazir" !important;
+  background-color: var(--color-Background) !important;
+  width: 100%;
+  font-size: 0.9rem !important;
+}
+.leader-board-score {
+  color: var(--color-purple) !important;
+}
+.leader-board-title {
+  border-bottom: 2px solid var(--color-Background) !important;
+  font-weight: bold !important;
+}
+@media screen and (min-width: 768px) {
+  .leader-board {
+    width: 350px;
+    height: 300px;
+  }
+  .leader-board-item {
+    font-size: 1.1rem !important;
+  }
+  .vocabloo-icon {
+    width: 135px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .leader-board {
+    width: 420px;
+  }
+}
+/* game-card */
+.plane-box {
+  background-color: var(--color-Background) !important;
+  border-radius: 0.7rem !important;
+  transition: all 0.3s ease-in-out;
+}
+.plane-box:hover {
+  transform: scale(1.02) translateY(-15px);
+}
+.plane-title {
+  color: var(--color-gray) !important;
+  font-weight: bold !important;
+}
+.plane-discription-box {
+  border-top: 2px solid var(--color-Selection) !important;
+  border-bottom: 2px solid var(--color-Selection) !important;
+}
+.plane-discription {
+  color: var(--color-Foreground) !important;
+  font-family: "vazir" !important;
+  background-color: var(--color-Selection) !important;
+}
+.plane-discription span {
+  color: var(--color-purple) !important;
+}
+.start-game-btn {
+  background-color: var(--color-purple) !important;
+  color: var(--color-Foreground) !important;
+  font-weight: bold !important;
+  transition: all 0.3s ease-in-out !important;
+}
+.start-game-btn:hover {
+  background-color: var(--color-CurrentLine) !important;
+  color: var(--color-Background) !important;
+}
+.start-play-title {
+  width: 100%;
+  height: 4px;
+  background-color: var(--color-Selection) !important;
+}
+/* input */
+.input-box {
+  position: relative;
+  height: 40px !important;
+  line-height: 40px !important;
+  width: 100%;
+}
+.in-input,
+.up-input,
+.offer-input {
+  position: absolute;
+  outline: none !important;
+  background-color: transparent !important;
+  z-index: 100;
+  transition: all 0.17s ease;
+  font-size: 1rem !important;
+  border-radius: 0.7rem !important;
+  box-shadow: none !important;
+}
+.in-input {
+  border: 2px solid var(--color-Foreground) !important;
+  color: var(--color-gray) !important;
+}
+.up-input {
+  border: 2px solid var(--color-Selection) !important;
+  color: var(--color-Background) !important;
+}
+.offer-input {
+  border: 2px solid var(--color-Background) !important;
+  color: var(--color-Selection) !important;
+  width: 100% !important;
+}
+.in-input:focus,
+.in-input:valid,
+.up-input:focus,
+.up-input:valid,
+.offer-input:focus,
+.offer-input:valid {
+  background-color: transparent !important;
+}
+.in-label,
+.up-label,
+.offer-label {
+  transition: all 0.17s ease-in-out;
+  margin: auto 0.5rem !important;
+  font-size: 1rem !important;
+  opacity: 1;
+  line-height: 15px;
+  font-family: "vazir" !important;
+}
+.in-label {
+  background-color: var(--color-Selection);
+  color: var(--color-gray) !important;
+}
+.up-label {
+  background-color: #9475bf;
+  color: var(--color-Background) !important;
+}
+.offer-label {
+  background-color: var(--color-Foreground) !important;
+  color: var(--color-Selection) !important;
+}
+.in-input:focus + .in-label,
+.in-input:valid + .in-label,
+.up-input:focus + .up-label,
+.up-input:valid + .up-label,
+.offer-input:focus + .offer-label,
+.offer-input:valid + .offer-label {
+  transform: translateY(-20px);
+  z-index: 200;
+  font-size: 0.9rem !important;
+  opacity: 1;
+}
+.in-input:focus + .in-label,
+.in-input:valid + .in-label {
+  border-left: 2px solid var(--color-gray);
+  border-right: 2px solid var(--color-gray);
+}
+.up-input:focus + .up-label,
+.up-input:valid + .up-label,
+.offer-input:focus + .offer-label,
+.offer-input:valid + .offer-label {
+  border-left: 2px solid var(--color-Selection);
+  border-right: 2px solid var(--color-Selection);
+}
+/* login */
+.sigh-in-box {
+  width: 100vw;
+  height: 100vh;
+}
+.sigh-in-form,
+.sigh-up-form {
+  width: 340px;
+  border-radius: 1rem;
+  z-index: 100 !important;
+}
+.sigh-in-form {
+  background-color: var(--color-Selection) !important;
+}
+.sigh-up-form {
+  background-color: #9475bf !important;
+}
+.login-vocabloo-icon {
+  width: 150px !important;
+}
+.login-title {
+  font-family: "vazir" !important;
+}
+.site-name {
+  color: var(--color-purple) !important;
+}
+.sigh-in-btn {
+  background-color: var(--color-purple) !important;
+  color: var(--color-Foreground) !important;
+}
+.sigh-in-btn:hover,
+.sigh-up-btn {
+  background-color: var(--color-Background) !important;
+  color: var(--color-purple) !important;
+}
+.sigh-up-btn:hover {
+  background-color: var(--color-Selection) !important;
+  color: var(--color-Foreground) !important;
+}
+.go-sigh-up {
+  color: var(--color-gray) !important;
+}
+.go-sigh-up span {
+  color: var(--color-purple) !important;
+}
+.go-sigh-in {
+  color: var(--color-Background) !important;
+}
+.go-sigh-in span {
+  color: var(--color-gray) !important;
+}
+.login-title-up {
+  font-family: "vazir" !important;
+  color: var(--color-Background) !important;
+}
+.error-label-in {
+  color: var(--color-red) !important;
+}
+.error-label-up {
+  color: #b32121 !important;
+}
+@media screen and (min-width: 768px) {
+  .sigh-in-form,
+  .sigh-up-form {
+    width: 420px;
+  }
+}
+/* loader */
+.loader-box {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to top right, #2f3036, #767993);
+}
+.loader {
+  width: 60px;
+  aspect-ratio: 0.5;
+  display: grid;
+}
+.loader:before {
+  content: "";
+  width: 30%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  margin: auto auto 0;
+  background: var(--color-purple) !important;
+  animation: l9-0 0.5s cubic-bezier(0, 800, 1, 800) infinite;
+}
+.loader:after {
+  content: "";
+  width: 100%;
+  aspect-ratio: 1 / cos(30deg);
+  margin: 0 auto auto;
+  clip-path: polygon(50% -50%, 100% 50%, 50% 150%, 0 50%);
+  background: var(--color-Background) !important;
+  opacity: 0.9;
+  animation: l9-1 0.5s linear infinite;
+}
+@keyframes l9-0 {
+  0%,
+  2% {
+    translate: 0 0%;
+  }
+  98%,
+  to {
+    translate: 0 -0.2%;
+  }
+}
+@keyframes l9-1 {
+  0%,
+  5% {
+    rotate: 0deg;
+  }
+  95%,
+  to {
+    rotate: -60deg;
+  }
+}
+
+/* game-plane */
+.game-guess-bar {
+  height: 100px;
+  background-color: var(--color-Background) !important;
+}
+.guess-input {
+  width: 45px !important;
+  height: 45px !important;
+  font-size: 1rem !important;
+  text-align: center;
+  font-weight: bold;
+  color: var(--color-Background) !important;
+  font-family: "vazir" !important;
+  border-radius: 0.3rem !important;
+  background-color: var(--color-Foreground) !important;
+  border: 2px solid var(--color-Selection) !important;
+  outline: 0 !important;
+  transition: all 0.3s ease-in-out !important;
+}
+.guess-input:focus {
+  border-color: var(--color-purple) !important;
+  box-shadow: 0px 0px 5px var(--color-pink) !important;
+  transform: scale(1.05);
+}
+.guessing-btn,
+.exit-game-btn {
+  background-color: var(--color-Selection) !important;
+  color: var(--color-Foreground) !important;
+  font-size: 0.8rem !important;
+  padding: 0.5rem 0.5rem !important;
+}
+.guessing-btn:hover,
+.exit-game-btn:hover {
+  background-color: var(--color-purple) !important;
+}
+@media screen and (min-width: 768px) {
+  .inputs-container {
+    flex-grow: 1;
+    order: 2;
+  }
+  .guessing-btn:last-of-type {
+    order: 3;
+  }
+  .exit-game-btn:last-of-type {
+    order: 1;
+  }
+  .game-guess-bar {
+    height: 80px;
+  }
+  .guess-input {
+    width: 65px !important;
+    height: 65px !important;
+    font-size: 1.5rem !important;
+    border-radius: 0.5rem !important;
+  }
+  .guessing-btn,
+  .exit-game-btn {
+    font-size: 1.2rem !important;
+    padding: 0.8rem 0rem !important;
+  }
+}
+/* alert */
+.guessbar {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.success-title {
+  color: rgb(105, 180, 82);
+}
+.error-title {
+  color: var(--color-red) !important;
+}
+.alert-confirm-button {
+  background-color: var(--color-Selection) !important;
+  color: var(--color-purple) !important;
+  font-family: "vazir" !important;
+  padding: 0.6rem 5rem !important;
+  margin-top: 0 !important;
+}
+.alert-confirm-button:hover {
+  background-color: var(--color-purple) !important;
+  color: var(--color-Background) !important;
+}
+.numberguesstext {
+  font-weight: bold;
+  font-family: "vazir" !important;
+  opacity: 0.5 !important;
+  color: var(--color-Selection) !important;
+}
+.end-game-discription {
+  color: var(--color-Background) !important;
+}
+.start-guess-title {
+  font-weight: bold !important;
+  color: var(--color-Background) !important;
+  opacity: 0.8;
+}
+.start-guess-underline {
+  width: 90%;
+  height: 4px;
+  background: #47476e;
+  background: radial-gradient(
+    circle,
+    rgba(71, 71, 110, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+.registredletter-box {
+  margin-bottom: 50px;
+}
+.registredletter {
+  width: 40px;
+  height: 40px;
+  font-size: 1rem;
+  border-radius: 0.4rem;
+  color: var(--color-Foreground) !important;
+  font-family: "vazir" !important;
+  font-weight: bold !important;
+  border: 2px solid #6e7594;
+  box-shadow: 0px 0px 4px var(--color-Selection) !important;
+  margin: 0.2rem 0.4rem !important;
+}
+@media screen and (min-width: 768px) {
+  .guessbar {
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+  }
+  .registredletter-box {
+    margin-bottom: 70px;
+  }
+  .registredletter {
+    width: 70px;
+    height: 70px;
+    font-size: 1.7rem;
+    border-radius: 0.7rem;
+    box-shadow: 0px 0px 7px var(--color-Selection) !important;
+  }
+}
+/* admin panel */
+.admin-navbar {
+  background: linear-gradient(
+    to right,
+    var(--color-Background),
+    var(--color-Selection)
+  );
+}
+.search-input {
+  width: 70% !important;
+  background-color: var(--color-Foreground) !important;
+  border-radius: 0.5rem !important;
+}
+.user-list-title {
+  font-family: "vazir" !important;
+  color: var(--color-Selection) !important;
+  border-bottom: 3px solid var(--color-gray) !important;
+}
+.user-card {
+  width: 300px !important;
+  border-radius: 0.7rem !important;
+  background-color: var(--color-Background) !important;
+}
+.user-card-btn {
+  width: 45% !important;
+  border-radius: 1rem;
+  color: var(--color-Foreground) !important;
+  font-size: 1.3rem !important;
+}
+.trash {
+  background-color: var(--color-red) !important;
+}
+.edit {
+  background-color: rgb(60, 165, 60) !important;
+}
+.user-data-title {
+  background-color: var(--color-Selection) !important;
+  color: var(--color-Foreground) !important;
+  font-weight: bold !important;
+  font-family: "vazir" !important;
+}
+.user-data {
+  color: var(--color-purple) !important;
+}
+.edituser-container {
+  height: 89.2vh;
+}
+.edituser-form {
+  background-color: var(--color-Selection) !important;
+  width: 350px;
+  border-radius: 1rem !important;
+}
+.edituser-form-title {
+  font-family: "vazir" !important;
+  color: var(--color-Foreground) !important;
+}
+.edituser-btn {
+  background-color: var(--color-purple) !important;
+  color: var(--color-Foreground) !important;
+  width: 48% !important;
+}
+.user-list-container {
+  width: 95% !important;
+}
+@media screen and (min-width: 768px) {
+  .search-input {
+    width: 50% !important;
+  }
+}
+/* errorpage */
+.errorpage-box {
+  height: 100vh !important;
+}
+.errorpage-title {
+  font-weight: bold !important;
+  color: var(--color-purple) !important;
+  filter: drop-shadow(0px 0px 10px var(--color-gray));
+}
+.errorpage-icon {
+  filter: drop-shadow(0px 0px 15px var(--color-gray));
+  width: 170px;
+}
+.error-text {
+  font-family: "vazir" !important;
+  font-weight: bold !important;
+  color: var(--color-Foreground) !important;
+  max-width: 70vw !important;
+  background-color: var(--color-Selection) !important;
+  box-shadow: 0px 0px 10px var(--color-gray) !important;
+  border: 2px solid #3d3f46 !important;
+}
+.error-text-span {
+  color: var(--color-gray) !important;
+}
+
+.try-again-btn {
+  background-color: var(--color-purple) !important;
+  font-weight: bold !important;
+  box-shadow: 4px 4px 15px var(--color-Selection) !important;
+  color: var(--color-Foreground) !important;
+}
+.try-again-btn:hover {
+  box-shadow: 5px 5px 8px var(--color-Selection) !important;
+  transform: scale(1.05);
+}
+/* game discription */
+.discription-box {
+  width: 320px;
+  height: 275px;
+  background-color: var(--color-Selection) !important;
+  border-radius: 1rem !important;
+  border: 2px solid var(--color-Background) !important;
+}
+.discription-text-box {
+  height: 120px;
+  width: 100%;
+  overflow: auto;
+  background-color: #464754;
+  border-radius: 0.5rem !important;
+}
+.discription-text {
+  color: var(--color-gray) !important;
+  text-align: start;
+}
+.add-word-btn,
+.remove-word-btn {
+  color: var(--color-Foreground) !important ;
+  font-size: 0.9rem !important;
+  transition: all 0.3s ease-in-out !important;
+}
+.add-word-btn {
+  background-color: rgb(63, 186, 63) !important;
+}
+.remove-word-btn {
+  background-color: rgb(173, 51, 51) !important;
+}
+.add-word-btn:hover {
+  background-color: rgb(11, 151, 11) !important;
+}
+.remove-word-btn:hover {
+  background-color: rgb(159, 28, 28) !important;
+}
+.discription-yellow {
+  color: rgb(204, 214, 62);
+}
+.discription-grren {
+  color: rgba(73, 187, 73, 1);
+}
+.discription-black {
+  color: rgb(0, 0, 25);
+}
+@media screen and (min-width: 768px) {
+  .discription-box {
+    width: 350px;
+    height: 300px;
+  }
+  .add-word-btn,
+  .remove-word-btn {
+    font-size: 1rem !important;
+  }
+}
+@media screen and (min-width: 992px) {
+  .discription-box {
+    width: 420px;
+  }
+}
+/* offer word */
+.offerform-box {
+  height: 60vh;
+}
+.offeradd-form {
+  width: 300px;
+  background-color: var(--color-Foreground);
+}
+.submit-offerword {
+  background-color: var(--color-purple) !important;
+  font-weight: bold !important;
+  color: var(--color-Foreground) !important;
+  width: 47% !important;
+}
+.submit-offerword:hover {
+  background-color: var(--color-Selection) !important;
+  color: var(--color-purple) !important;
+}
+.offer-go-home {
+  box-sizing: border-box !important;
+  border: 2px solid var(--color-purple) !important;
+  font-weight: bold !important;
+  color: var(--color-purple) !important;
+  width: 47% !important;
+}
+@media screen and (min-width: 768px) {
+  .offeradd-form {
+    width: 500px;
+  }
+}
+/* show offer */
+.offer-box {
+  background-color: var(--color-Selection) !important;
+  width: 320px !important;
+}
+/* admin-words */
+.adminword-box {
+  width: 200px !important;
+  border-radius: 0.5rem !important;
+  background-color: var(--color-Selection) !important;
+}
+.adminword {
+  width: 150px;
+  color: var(--color-Foreground) !important;
+}
