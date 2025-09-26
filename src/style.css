@@ -14,7 +14,7 @@ button {
 }
 /* navbar */
 .vocabloo-icon {
-  width: 110px;
+  width: 90px;
 }
 .profile {
   font-family: "vazir" !important;
@@ -22,6 +22,7 @@ button {
   color: var(--color-Foreground) !important;
   border-radius: 0.5rem !important;
   padding: 10px 7px !important;
+  font-size: 0.75rem !important;
 }
 .your-score {
   color: var(--color-purple);
@@ -38,16 +39,29 @@ button {
   background-color: var(--color-purple) !important;
   color: var(--color-gray) !important;
   font-family: "vazir" !important;
-  padding: 5px 10px !important;
+  padding: 3px 10px !important;
   border: 2px solid var(--color-purple) !important;
 }
 .logout-btn:hover {
   background-color: transparent !important;
   color: var(--color-purple) !important;
 }
+@media screen and (min-width: 500px) {
+  .profile {
+    padding: 13px 15px !important;
+    font-size: 0.9rem !important;
+  }
+  .logout-btn {
+    padding: 6px 20px !important;
+  }
+  .vocabloo-icon {
+    width: 120px;
+  }
+}
 @media screen and (min-width: 768px) {
   .profile {
     padding: 13px 15px !important;
+    font-size: 1rem !important;
   }
   .logout-btn {
     padding: 8px 25px !important;
@@ -234,8 +248,8 @@ button {
 }
 .sigh-in-form,
 .sigh-up-form {
-  width: 340px;
-  border-radius: 1rem;
+  width: 320px;
+  border-radius: 0.7rem;
   z-index: 100 !important;
 }
 .sigh-in-form {
@@ -292,6 +306,7 @@ button {
   .sigh-in-form,
   .sigh-up-form {
     width: 420px;
+    border-radius: 1rem !important;
   }
 }
 /* loader */
@@ -455,9 +470,10 @@ button {
 .registredletter-box {
   margin-bottom: 50px;
 }
-.registredletter {
-  width: 40px;
-  height: 40px;
+.registredletter,
+.notregistredletter {
+  width: 47px;
+  height: 47px;
   font-size: 1rem;
   border-radius: 0.4rem;
   color: var(--color-Foreground) !important;
@@ -465,7 +481,12 @@ button {
   font-weight: bold !important;
   border: 2px solid #6e7594;
   box-shadow: 0px 0px 4px var(--color-Selection) !important;
-  margin: 0.2rem 0.4rem !important;
+  margin: 0rem 0.4rem !important;
+}
+.notregistredletter {
+  border: 1px solid var(--color-gray) !important;
+  box-shadow: 0px 0px 6px rgb(165, 170, 173) !important;
+  background-color: var(--color-Foreground) !important;
 }
 @media screen and (min-width: 768px) {
   .guessbar {
@@ -474,12 +495,16 @@ button {
   .registredletter-box {
     margin-bottom: 70px;
   }
-  .registredletter {
+  .registredletter,
+  .notregistredletter {
     width: 70px;
     height: 70px;
     font-size: 1.7rem;
     border-radius: 0.7rem;
     box-shadow: 0px 0px 7px var(--color-Selection) !important;
+  }
+  .notregistredletter {
+    box-shadow: 0px 0px 6px rgb(165, 170, 173) !important;
   }
 }
 /* admin panel */
@@ -625,7 +650,7 @@ button {
   background-color: rgb(159, 28, 28) !important;
 }
 .discription-yellow {
-  color: rgb(204, 214, 62);
+  color: rgba(175, 184, 39, 1);
 }
 .discription-grren {
   color: rgba(73, 187, 73, 1);

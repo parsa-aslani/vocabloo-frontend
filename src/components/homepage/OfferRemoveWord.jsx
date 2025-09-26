@@ -63,7 +63,7 @@ const OfferRemoveWord = () => {
                 type="submit"
                 className="btn offer-go-home px-3 py-2 my-auto rounded shadow-sm me-2"
               >
-                بازگشت به صفحه اصلی
+                صفحه اصلی
               </Link>
             </div>
           </Form>

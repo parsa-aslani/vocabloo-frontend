@@ -231,9 +231,9 @@ const GuessWordGame = ({
           : null;
       updatedLetters[`letter${i}`] = wordletter[i];
       if (randomword[i] === wordletter[i]) {
-        updatedLetters[`letterstyle${i}`] = "rgba(73, 187, 73, 1)";
+        updatedLetters[`letterstyle${i}`] = "rgba(67, 185, 67, 1)";
       } else if (yellowletter === true) {
-        updatedLetters[`letterstyle${i}`] = "rgba(189, 198, 65, 1)";
+        updatedLetters[`letterstyle${i}`] = "rgba(175, 184, 39, 1)";
       } else {
         updatedLetters[`letterstyle${i}`] = "#494c5e";
       }
@@ -324,14 +324,20 @@ const GuessWordGame = ({
       toast.error("کلمه معنا ندارد");
     }
   };
+  // not guess line
+  const makenotguessline = (n) => {
+    n = Math.floor(Number(n));
+    if (n <= 0) return [];
+    return Array.from({ length: n }, (_, i) => i + 1);
+  };
   return (
     <>
       <div>
         <h2 className="mt-3 start-guess-title">حدس زدن رو شروع کن !</h2>
         <div className="start-guess-underline mx-auto mt-4"></div>
-        <div className="registredletter-box d-flex flex-column align-items-center mt-2 rounded">
+        <div className="registredletter-box d-flex flex-column align-items-center mt-2 pb-3 rounded">
           {allSubmissions.map((registredword, index) => (
-            <div key={index} className="my-2 d-flex ">
+            <div key={index} className="my-1 my-md-2 d-flex ">
               {[0, 1, 2, 3, 4, 5].map((i, index) => {
                 if (registredword[`letter${i}`]) {
                   return (
@@ -344,6 +350,20 @@ const GuessWordGame = ({
                     >
                       {registredword[`letter${i}`]}
                     </div>
+                  );
+                }
+              })}
+            </div>
+          ))}
+          {makenotguessline(6 - allSubmissions.length).map((index) => (
+            <div key={index} className="my-1 my-md-2 d-flex ">
+              {[0, 1, 2, 3, 4, 5].map((i, index) => {
+                if (i < numberinput) {
+                  return (
+                    <div
+                      key={index}
+                      className="notregistredletter d-flex justify-content-center align-items-center"
+                    ></div>
                   );
                 }
               })}

@@ -29,7 +29,7 @@ const Navbar = ({ user }) => {
   return (
     <>
       {user && console.log(user)}
-      <nav className="navbar site-navbar px-2 px-md-4 shadow ">
+      <nav className="navbar site-navbar px-1 px-md-4 shadow ">
         <div className="navbar-brand d-flex px-1">
           <p className="my-auto navbar-text d-none d-md-block">
             بازی حدس کلمه{" "}

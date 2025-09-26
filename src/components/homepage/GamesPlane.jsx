@@ -8,7 +8,7 @@ const GamePlane = () => {
   return (
     <div className="row mt-3">
       <div className="mx-auto col-12 col-md-6 col-lg-4">
-        <div className="plane-box py-3 shadow px-3 mx-5 mx-md-4 my-3">
+        <div className="plane-box py-3 shadow px-3 mx-3 mx-sm-5 mx-md-4 my-3">
           <h4 className="pb-1 plane-title">بازی 4 حرفی</h4>
           <div className="py-1 plane-discription-box">
             <p className="plane-discription my-1 w-100 text-end py-1 rounded px-2">
@@ -35,7 +35,7 @@ const GamePlane = () => {
         </div>
       </div>
       <div className="mx-auto col-12 col-md-6 col-lg-4">
-        <div className="plane-box py-3 shadow px-3 mx-5 mx-md-4 my-3">
+        <div className="plane-box py-3 shadow px-3 mx-3 mx-sm-5 mx-md-4 my-3">
           <h4 className="pb-1 plane-title">بازی 5 حرفی</h4>
           <div className="py-1 plane-discription-box">
             <p className="plane-discription my-1 w-100 text-end py-1 rounded px-2">
@@ -62,14 +62,14 @@ const GamePlane = () => {
         </div>
       </div>
       <div className="mx-auto col-12 col-md-6 col-lg-4">
-        <div className="plane-box py-3 shadow px-3 mx-5 mx-md-4 my-3">
+        <div className="plane-box py-3 shadow px-3 mx-3 mx-sm-5 mx-md-4 my-3">
           <h4 className="pb-1 plane-title">بازی 6 حرفی</h4>
           <div className="py-1 plane-discription-box">
             <p className="plane-discription my-1 w-100 text-end py-1 rounded px-2">
               تعداد کلمه : <span>{wordssixletter.length} کلمه</span>
             </p>
             <p className="plane-discription my-1 w-100 text-end py-1 rounded px-2">
-              تعداد حدس : <span>5 حدس</span>
+              تعداد حدس : <span>6 حدس</span>
             </p>
             <p className="plane-discription my-1 w-100 text-end py-1 rounded px-2">
               در صورت برد : <span>+20 امتیاز</span>
