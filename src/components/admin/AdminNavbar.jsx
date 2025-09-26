@@ -10,19 +10,19 @@ const AdminNavbar = ({ searchusers }) => {
       <nav className="navbar admin-navbar py-3 shadow-lg px-1 px-md-4">
         <div className="d-flex flex-column flex-lg-row">
           <Link
-            to={"/VocablooAdmin-42a5eb1wf/view-add-offer"}
+            to={`${process.env.REACT_APP_ADMIN_URL}/view-add-offer`}
             className="btn px-2 py-1 rounded btn-success mx-lg-2"
           >
             پیشنهاد افزودن
           </Link>
           <Link
-            to={"/VocablooAdmin-42a5eb1wf/view-remove-offer"}
+            to={`${process.env.REACT_APP_ADMIN_URL}/view-remove-offer`}
             className="btn px-2 py-1 rounded btn-danger mx-lg-2"
           >
             پیشنهاد حذف
           </Link>
         </div>
-        {location.pathname === "/VocablooAdmin-42a5eb1wf" ? (
+        {location.pathname === process.env.REACT_APP_ADMIN_URL ? (
           <input
             type="search"
             className="form-control search-input mx-auto shadow w-50"

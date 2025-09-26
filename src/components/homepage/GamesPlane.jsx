@@ -7,7 +7,7 @@ const GamePlane = () => {
     useContext(MainContext);
   return (
     <div className="row mt-3">
-      <div className="mx-auto col-11 col-md-6 col-lg-4">
+      <div className="mx-auto col-12 col-md-6 col-lg-4">
         <div className="plane-box py-3 shadow px-3 mx-5 mx-md-4 my-3">
           <h4 className="pb-1 plane-title">بازی 4 حرفی</h4>
           <div className="py-1 plane-discription-box">
@@ -34,7 +34,7 @@ const GamePlane = () => {
           </div>
         </div>
       </div>
-      <div className="mx-auto col-11 col-md-6 col-lg-4">
+      <div className="mx-auto col-12 col-md-6 col-lg-4">
         <div className="plane-box py-3 shadow px-3 mx-5 mx-md-4 my-3">
           <h4 className="pb-1 plane-title">بازی 5 حرفی</h4>
           <div className="py-1 plane-discription-box">
@@ -61,7 +61,7 @@ const GamePlane = () => {
           </div>
         </div>
       </div>
-      <div className="mx-auto col-11 col-md-6 col-lg-4">
+      <div className="mx-auto col-12 col-md-6 col-lg-4">
         <div className="plane-box py-3 shadow px-3 mx-5 mx-md-4 my-3">
           <h4 className="pb-1 plane-title">بازی 6 حرفی</h4>
           <div className="py-1 plane-discription-box">

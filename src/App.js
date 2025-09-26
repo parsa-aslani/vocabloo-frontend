@@ -497,7 +497,7 @@ const App = () => {
               />
             }
           />
-          <Route path="/homepage" element={<Navbar user={user} />}>
+          <Route path="/homepage" element={<Navbar user={user && user} />}>
             <Route index element={<HomePage setuser={setuser} />} />
             <Route
               path="/homepage/vocabloo-four-letter"
@@ -561,7 +561,7 @@ const App = () => {
             />
           </Route>
           <Route
-            path="/VocablooAdmin-42a5eb1wf"
+            path={process.env.REACT_APP_ADMIN_URL}
             element={<AdminNavbar searchusers={searchusers} />}
           >
             <Route
@@ -575,11 +575,11 @@ const App = () => {
               }
             />
             <Route
-              path="/VocablooAdmin-42a5eb1wf/edituser/:userId"
+              path={`${process.env.REACT_APP_ADMIN_URL}/edituser/:userId`}
               element={<EditUser putedit={putedit} />}
             />
             <Route
-              path="/VocablooAdmin-42a5eb1wf/view-add-offer"
+              path={`${process.env.REACT_APP_ADMIN_URL}/view-add-offer`}
               element={
                 <VeiwAddOffer
                   deleteofferalert={deleteofferalert}
@@ -588,7 +588,7 @@ const App = () => {
               }
             />
             <Route
-              path="/VocablooAdmin-42a5eb1wf/view-remove-offer"
+              path={`${process.env.REACT_APP_ADMIN_URL}/view-remove-offer`}
               element={
                 <VeiwRemoveOffer
                   deleteofferalert={deleteofferalert}
@@ -597,7 +597,7 @@ const App = () => {
               }
             />
             <Route
-              path="/VocablooAdmin-42a5eb1wf/four-letter"
+              path={`${process.env.REACT_APP_ADMIN_URL}/four-letter`}
               element={
                 <AdminWords
                   deleteplane={deletefourletter}
@@ -610,7 +610,7 @@ const App = () => {
               }
             />
             <Route
-              path="/VocablooAdmin-42a5eb1wf/five-letter"
+              path={`${process.env.REACT_APP_ADMIN_URL}/five-letter`}
               element={
                 <AdminWords
                   deleteplane={deletefiveletter}
@@ -623,7 +623,7 @@ const App = () => {
               }
             />
             <Route
-              path="/VocablooAdmin-42a5eb1wf/six-letter"
+              path={`${process.env.REACT_APP_ADMIN_URL}/six-letter`}
               element={
                 <AdminWords
                   deleteplane={deletesixletter}

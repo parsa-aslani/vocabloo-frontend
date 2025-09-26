@@ -10,12 +10,11 @@ const HomePage = ({ setuser }) => {
   useEffect(() => {
     const getlocaldata = async () => {
       const loggedUser = localStorage.getItem("user");
-
       if (!loggedUser) {
         navigate("/sighin");
       } else {
-        const newValue = await JSON.parse(loggedUser).data[0];
-        setuser(newValue);
+        const newValue = await JSON.parse(loggedUser).data;
+        setuser(newValue);  
       }
     };
     getlocaldata();

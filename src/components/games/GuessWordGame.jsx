@@ -39,12 +39,8 @@ const GuessWordGame = ({
     } else {
       try {
         const parsed = JSON.parse(loggedUser);
-        if (
-          parsed.data &&
-          Array.isArray(parsed.data) &&
-          parsed.data.length > 0
-        ) {
-          const newValue = parsed.data[0];
+        if (parsed.data) {
+          const newValue = parsed.data;
           setuser(newValue);
         } else {
           navigate("/signin");
@@ -133,7 +129,7 @@ const GuessWordGame = ({
       try {
         const { data: usersubmit } = edituser(user.id, userdata);
         setuser(usersubmit);
-        localStorage.setItem("user", JSON.stringify({ data: [userdata] }));
+        localStorage.setItem("user", JSON.stringify({ data: userdata }));
       } catch (err) {
         console.log(err.message);
       }

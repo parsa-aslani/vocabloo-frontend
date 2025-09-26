@@ -38,10 +38,10 @@ const SighIn = ({ loading, checkuser, users }) => {
           onSubmit={(values) => {
             let chechuserdata = true;
             if (
-              values.username === "Parsa-Admin" &&
-              values.password === "parsina13901387"
+              values.username === process.env.REACT_APP_ADMIN_USERNAME &&
+              values.password === process.env.REACT_APP_ADMIN_PASSWORD
             ) {
-              navigate("/VocablooAdmin-42a5eb1wf");
+              navigate(process.env.REACT_APP_ADMIN_URL);
             } else {
               users.map((user) => {
                 if (

@@ -31,7 +31,7 @@ const SighUp = ({ loading, postuserdata, users }) => {
           initialValues={{
             username: "",
             password: "",
-            score: 0,
+            score: 20,
           }}
           validationSchema={loginvalidation}
           onSubmit={(values) => {

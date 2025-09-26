@@ -8,7 +8,7 @@ export const getalluser = () => {
   return axios.get(url);
 };
 export const getuser = (username, password) => {
-  const url = `${BASE_URL}/users?username=${username}&password=${password}`;
+  const url = `${BASE_URL}/users/login?username=${username}&password=${password}`;
   return axios.get(url);
 };
 export const getuserwithid = (userid) => {
