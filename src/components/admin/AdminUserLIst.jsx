@@ -12,19 +12,19 @@ const AdminUserList = ({ filterusers, deletealert, users }) => {
       </div>
       <div>
         <Link
-          to={`${process.env.REACT_APP_ADMIN_URL}/four-letter`}
+          to={"/VocablooAdmin-42a5eb1wf/four-letter"}
           className="btn px-2 py-2 mx-2 shadow-sm rounded btn-primary"
         >
           کلمات چهار حرفی
         </Link>
         <Link
-          to={`${process.env.REACT_APP_ADMIN_URL}/five-letter`}
+          to={"/VocablooAdmin-42a5eb1wf/five-letter"}
           className="btn px-2 py-2 mx-2 shadow-sm rounded btn-dark"
         >
           کلمات پنج حرفی
         </Link>
         <Link
-          to={`${process.env.REACT_APP_ADMIN_URL}/six-letter`}
+          to={"/VocablooAdmin-42a5eb1wf/six-letter"}
           className="btn px-2 py-2 mx-2 shadow-sm rounded btn-warning"
         >
           کلمات شش حرفی
@@ -48,7 +48,7 @@ const AdminUserList = ({ filterusers, deletealert, users }) => {
                     <BsTrash3Fill />
                   </button>
                   <Link
-                    to={`${process.env.REACT_APP_ADMIN_URL}/edituser/${user.id}`}
+                    to={`/VocablooAdmin-42a5eb1wf/edituser/${user.id}`}
                     className="user-card-btn btn edit mx-2 py-1 shadow"
                   >
                     <MdModeEdit />

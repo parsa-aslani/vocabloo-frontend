@@ -38,8 +38,8 @@ const SighIn = ({ loading, checkuser, users }) => {
           onSubmit={(values) => {
             let chechuserdata = true;
             if (
-              values.username === process.env.REACT_APP_ADMIN_USERNAME &&
-              values.password === process.env.REACT_APP_ADMIN_PASSWORD
+              values.username === "Parsa-Admin" &&
+              values.password === "parsina13901387"
             ) {
               navigate(process.env.REACT_APP_ADMIN_URL);
             } else {

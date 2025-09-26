@@ -561,7 +561,7 @@ const App = () => {
             />
           </Route>
           <Route
-            path={process.env.REACT_APP_ADMIN_URL}
+            path="/VocablooAdmin-42a5eb1wf"
             element={<AdminNavbar searchusers={searchusers} />}
           >
             <Route
@@ -575,11 +575,11 @@ const App = () => {
               }
             />
             <Route
-              path={`${process.env.REACT_APP_ADMIN_URL}/edituser/:userId`}
+              path="/VocablooAdmin-42a5eb1wf/edituser/:userId"
               element={<EditUser putedit={putedit} />}
             />
             <Route
-              path={`${process.env.REACT_APP_ADMIN_URL}/view-add-offer`}
+              path="/VocablooAdmin-42a5eb1wf/view-add-offer"
               element={
                 <VeiwAddOffer
                   deleteofferalert={deleteofferalert}
@@ -588,7 +588,7 @@ const App = () => {
               }
             />
             <Route
-              path={`${process.env.REACT_APP_ADMIN_URL}/view-remove-offer`}
+              path="/VocablooAdmin-42a5eb1wf/view-remove-offer"
               element={
                 <VeiwRemoveOffer
                   deleteofferalert={deleteofferalert}
@@ -597,7 +597,7 @@ const App = () => {
               }
             />
             <Route
-              path={`${process.env.REACT_APP_ADMIN_URL}/four-letter`}
+              path="/VocablooAdmin-42a5eb1wf/four-letter"
               element={
                 <AdminWords
                   deleteplane={deletefourletter}
@@ -610,7 +610,7 @@ const App = () => {
               }
             />
             <Route
-              path={`${process.env.REACT_APP_ADMIN_URL}/five-letter`}
+              path="/VocablooAdmin-42a5eb1wf/five-letter"
               element={
                 <AdminWords
                   deleteplane={deletefiveletter}
@@ -623,7 +623,7 @@ const App = () => {
               }
             />
             <Route
-              path={`${process.env.REACT_APP_ADMIN_URL}/six-letter`}
+              path="/VocablooAdmin-42a5eb1wf/six-letter"
               element={
                 <AdminWords
                   deleteplane={deletesixletter}
