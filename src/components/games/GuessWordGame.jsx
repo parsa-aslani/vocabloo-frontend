@@ -336,6 +336,20 @@ const GuessWordGame = ({
         <h2 className="mt-3 start-guess-title">حدس زدن رو شروع کن !</h2>
         <div className="start-guess-underline mx-auto mt-4"></div>
         <div className="registredletter-box d-flex flex-column align-items-center mt-2 pb-3 rounded">
+          {makenotguessline(6 - allSubmissions.length).map((index) => (
+            <div key={index} className="my-1 my-md-2 d-flex ">
+              {[0, 1, 2, 3, 4, 5].map((i, index) => {
+                if (i < numberinput) {
+                  return (
+                    <div
+                      key={index}
+                      className="notregistredletter d-flex justify-content-center align-items-center"
+                    ></div>
+                  );
+                }
+              })}
+            </div>
+          ))}
           {allSubmissions.map((registredword, index) => (
             <div key={index} className="my-1 my-md-2 d-flex ">
               {[0, 1, 2, 3, 4, 5].map((i, index) => {
@@ -350,20 +364,6 @@ const GuessWordGame = ({
                     >
                       {registredword[`letter${i}`]}
                     </div>
-                  );
-                }
-              })}
-            </div>
-          ))}
-          {makenotguessline(6 - allSubmissions.length).map((index) => (
-            <div key={index} className="my-1 my-md-2 d-flex ">
-              {[0, 1, 2, 3, 4, 5].map((i, index) => {
-                if (i < numberinput) {
-                  return (
-                    <div
-                      key={index}
-                      className="notregistredletter d-flex justify-content-center align-items-center"
-                    ></div>
                   );
                 }
               })}
